@@ -25,7 +25,7 @@ app.post('/template', (req, res) => {
     company, signature, title, style,
   } = req.body;
   if (style === 'simple') {
-    return res.render('simpletemplate.ejs', { signature, company, title });
+    return res.render('simpleTemplate.ejs', { signature, company, title });
   }
   return res.render('template.ejs', { signature, company, title });
 });
